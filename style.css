@@ -1,0 +1,20 @@
+:root { color-scheme: light; --ink: #20262e; --muted: #5f6b78; --accent: #1765a3; --line: #e4e9ef; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0 auto; padding: 55px 24px 40px; max-width: 790px; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: white; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2 { line-height: 1.25; letter-spacing: -.025em; }
+h1 { font-size: 2rem; margin: 0 0 .45rem; }
+h2 { margin: 2.1rem 0 .8rem; padding-bottom: .3rem; font-size: 1.35rem; border-bottom: 1px solid var(--line); }
+p { margin: .55rem 0 1rem; }
+.profile { display: flex; justify-content: space-between; align-items: center; gap: 22px; }
+.profile-copy { flex: 1; min-width: 0; }
+.profile-copy p { margin: .3rem 0; }
+.profile-photo { flex: 0 0 128px; }
+.profile-photo img { width: 128px; height: 128px; object-fit: cover; border-radius: 9px; display: block; }
+li { padding-left: .1rem; margin: .25rem 0; }
+ul { padding-left: 1.45rem; }
+pre { padding: 15px; overflow: auto; background: #f6f8fa; border-radius: 7px; font-size: .86rem; line-height: 1.5; }
+.site-footer { margin-top: 3rem; padding-top: .8rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+@media (max-width: 520px) { body { padding: 30px 18px; font-size: 15px; } .profile-photo { flex-basis: 90px; } .profile-photo img { width: 90px; height: 90px; } h1 { font-size: 1.7rem; } }
